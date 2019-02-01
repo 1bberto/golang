@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-    "os"        
-    "strings"
-    "strconv"
-    "io"
+	"os"
+	"strings"
+	"strconv"
+	"io"
 )
 type filesToMove struct {
     basePath string
