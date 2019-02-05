@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+<<<<<<< HEAD
 	"io"
 	"io/ioutil"
 	"log"
@@ -9,6 +10,14 @@ import (
 	"strconv"
 	"strings"
 	"time"
+=======
+	"io/ioutil"
+	"log"
+	"os"
+	"strings"
+	"strconv"
+	"io"
+>>>>>>> ef99592144240740a62bad23a9b8bfcfa5610041
 )
 
 // FileToMove represents a request to run a command.
@@ -123,6 +132,7 @@ func createFolder(target string, FileToMove FileToMove) (sourcePath string, targ
 
 	parts = append(parts, FileToMove.File.Name())
 
+<<<<<<< HEAD
 	sourcePath = strings.Join(source, "/")
 	targetPath = strings.Join(parts, "/")
 	return
@@ -171,4 +181,9 @@ func (file FileToMove) CheckFolder(diasCorte int) {
 			os.Remove(file.Name)
 		}
 	}
+=======
+    sourcePath = strings.Join(source, "/")
+    targetPath = strings.Join(parts,"/")    
+    return sourcePath,targetPath
+>>>>>>> ef99592144240740a62bad23a9b8bfcfa5610041
 }
